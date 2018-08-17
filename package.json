@@ -15,6 +15,7 @@
     "d3v4": "^4.2.2"
   },
   "devDependencies": {
+    "fullpage.js": "^3.0.2",
     "nwb": "0.21.x"
   },
   "author": "",

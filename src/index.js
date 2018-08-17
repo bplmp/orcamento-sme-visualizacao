@@ -1,10 +1,16 @@
 const d3 = require('d3v4');
+const fullpage = require('fullpage.js/dist/fullpage.extensions.min.js');
+import 'fullpage.js/dist/fullpage.css'
 
 import './style/main.css'
 const slides = require('./slides').slides;
 const data = require('./data/budget.json');
 
 const scroll = require('./scroll');
+
+let app = document.querySelector('#app')
+app.innerHTML = `<div id="svg"></div>
+<div id="text"></div>`
 
 let svgDiv = document.querySelector('#svg')
 let textDiv = document.querySelector('#text')
@@ -16,14 +22,26 @@ Object.keys(slides).forEach(function(key, index) {
   let slide = slides[key]
   let text = slide.text
   let id = key
-  let html = `<p class="text-paragraph" id="${id}">${text}</p>`
+  // let html = `<p class="text-paragraph" id="${id}">${text}</p>`
+  let html = `<div class="section" id="${id}">${text}</div>`
   textParagraphs.push(html)
 });
 
-textDiv.innerHTML = `${textParagraphs.join('')}`
+textDiv.innerHTML = `<div id="fullpage">${textParagraphs.join('')}</div>`
 
 window.onload = function() {
   init();
+
+  new fullpage('#fullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  	scrollHorizontally: true,
+    scrollBar: true,
+    // navigation: true,
+    onLeave: function(origin, destination, direction) {
+      scroll.triggerSlide(destination.item.id)
+    }
+  });
+
 };
 
 function init() {
