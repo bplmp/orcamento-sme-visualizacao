@@ -1,0 +1,118 @@
+{
+  "name": "orc",
+  "children": [{
+    "name": "alimentacao",
+    "children": [{
+      "name": "insumos",
+      "size": 194498042.16
+    }, {
+      "name": "leve_leite",
+      "size": 50826933.02
+    }, {
+      "name": "outros",
+      "size": 7850.0
+    }, {
+      "name": "pnae",
+      "size": 19871110.0
+    }, {
+      "name": "prep_dist",
+      "size": 52905599.38
+    }, {
+      "name": "refeicoes",
+      "size": 328161844.67
+    }]
+  }, {
+    "name": "funcionamento_unidades",
+    "children": [{
+      "name": "agua_esgoto",
+      "size": 93020801.3
+    }, {
+      "name": "aluguel_imoveis",
+      "size": 17577437.31
+    }, {
+      "name": "eletricidade",
+      "size": 44973126.74
+    }, {
+      "name": "limpeza",
+      "size": 406884941.54
+    }, {
+      "name": "manutencao",
+      "size": 17065857.04
+    }, {
+      "name": "mobiliario",
+      "size": 11702.0
+    }, {
+      "name": "telefone",
+      "size": 5298664.84
+    }, {
+      "name": "vigilancia",
+      "size": 181857045.36
+    }]
+  }, {
+    "name": "obras_reformas",
+    "children": [{
+      "name": "obras_reformas",
+      "size": 58263296.13
+    }]
+  }, {
+    "name": "parcerias",
+    "children": [{
+      "name": "creches",
+      "size": 1954064406.19
+    }, {
+      "name": "ed_especial",
+      "size": 36483656.53
+    }, {
+      "name": "eja",
+      "size": 10687166.22
+    }, {
+      "name": "outros",
+      "size": 3005697.93
+    }]
+  }, {
+    "name": "pessoal",
+    "children": [{
+      "name": "docentes",
+      "size": 5872021815.26
+    }, {
+      "name": "estagios",
+      "size": 33448144.67
+    }, {
+      "name": "gestores",
+      "size": 343097216.08
+    }, {
+      "name": "outros",
+      "size": 2179419.19
+    }]
+  }, {
+    "name": "ti",
+    "children": [{
+      "name": "internet",
+      "size": 11271799.47
+    }, {
+      "name": "manutencao_equip_ti",
+      "size": 5937810.78
+    }, {
+      "name": "outros",
+      "size": 13863315.66
+    }, {
+      "name": "prodam",
+      "size": 9824413.64
+    }]
+  }, {
+    "name": "transferencias",
+    "children": [{
+      "name": "ptrf",
+      "size": 41846569.91
+    }]
+  }, {
+    "name": "uniforme_materiais",
+    "children": [{
+      "name": "materiais",
+      "size": 26113731.88
+    }, {
+      "name": "uniforme",
+      "size": 101825344.25
+    }]
+  }]
+}

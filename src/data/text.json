@@ -1,0 +1,34 @@
+{
+  "paragraphs": [
+    {
+      "id": "p01",
+      "cat_1": "",
+      "cat_2": "",
+      "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação."
+    },
+    {
+      "id": "p02",
+      "cat_1": "",
+      "cat_2": "",
+      "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
+    },
+    {
+      "id": "p03",
+      "cat_1": "orc-pessoal",
+      "cat_2": "",
+      "text": "Esta é a parte que corresponde ao gasto com pessoal."
+    },
+    {
+      "id": "p04",
+      "cat_1": "orc-funcionamento_unidades",
+      "cat_2": "",
+      "text": "Esta, os gastos com a manutenção das escolas."
+    },
+    {
+      "id": "p05",
+      "cat_1": "orc-parcerias",
+      "cat_2": "",
+      "text": "Com parcerias."
+    }
+  ]
+}

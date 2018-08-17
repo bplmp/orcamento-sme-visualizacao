@@ -12,6 +12,7 @@
     "test:watch": "nwb test --server"
   },
   "dependencies": {
+    "d3v4": "^4.2.2"
   },
   "devDependencies": {
     "nwb": "0.21.x"
