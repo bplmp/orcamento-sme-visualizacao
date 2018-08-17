@@ -13,7 +13,8 @@
     "test:watch": "nwb test --server"
   },
   "dependencies": {
-    "d3v4": "^4.2.2"
+    "d3v4": "^4.2.2",
+    "numeral": "^2.0.6"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",

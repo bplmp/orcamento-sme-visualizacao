@@ -1,4 +1,22 @@
 const d3 = require('d3v4');
+const numeral = require('numeral');
+numeral.register('locale', 'br', {
+    delimiters: {
+        thousands: '.',
+        decimal: ','
+    },
+    abbreviations: {
+        thousand: 'mil',
+        million: 'mi',
+        billion: 'bi',
+        trillion: 'tri'
+    },
+    currency: {
+        symbol: 'R$'
+    }
+});
+numeral.locale('br');
+numeral.defaultFormat('0,0.00');
 
 import './style/main.css'
 const slides = require('./slides').slides;
@@ -11,19 +29,16 @@ let textDiv = document.querySelector('#text')
 
 svg.innerHTML = `<svg id="chart" class="treemap" width="100%" height="100%"></svg>`
 
-let textParagraphs = [];
-Object.keys(slides).forEach(function(key, index) {
-  let slide = slides[key]
-  let text = slide.text
-  let id = key
-  let html = `<p class="text-paragraph" id="${id}">${text}</p>`
-  textParagraphs.push(html)
-});
-
-textDiv.innerHTML = `${textParagraphs.join('')}`
+function isMobile() {
+   if(window.devicePixelRatio > 1) {
+     return true;
+   } else {
+     return false;
+   }
+}
 
 window.onload = function() {
-  init();
+  init()
 };
 
 function init() {
@@ -62,6 +77,7 @@ function init() {
 
   cell.append("rect")
   .attr("id", function(d) { return d.data.id; })
+  .attr("data-value", function(d) { return d.value; })
   .attr("width", function(d) { return d.x1 - d.x0; })
   .attr("height", function(d) { return d.y1 - d.y0; })
   .attr("stroke", "#fff")
@@ -116,6 +132,38 @@ function init() {
   function sumBySize(d) {
     return d.size;
   }
+
+  let textParagraphs = [];
+  Object.keys(slides).forEach(function(key, index) {
+    let slide = slides[key]
+    let text = slide.text
+    let id = key
+    let slideCategories = slide.cat_2
+    let slideValues = []
+    if (slideCategories) {
+      slideCategories.forEach(function (cat) {
+        let slideRect = document.getElementById(cat)
+        let slideValue = slideRect ? slideValues.push(parseFloat(slideRect.dataset.value)) : false
+      })
+    }
+    let totalValue = slideValues.reduce((a, b) => a + b, 0)
+    totalValue = numeral(totalValue / 1000000).format()
+    let valueHtml = slideValues.length ? `<p>${totalValue} milhões</p>` : ''
+    // alternative: display all values
+    // if (slideCategories) {
+    //   slideCategories.forEach(function (cat) {
+    //     let slideRect = document.getElementById(cat)
+    //     let slideValue = slideRect ? numeral(parseFloat(slideRect.dataset.value) / 100000).format() : false
+    //     slideValues.push(slideValue)
+    //   })
+    // }
+    // let valueHtml = slideValues.length ? `<p>${slideValues.join(',&nbsp;&nbsp;')} milhões</p>` : ''
+    let html = `<div class="text-paragraph" id="${id}"><h1>${text}</h1>${valueHtml}</div>`
+    textParagraphs.push(html)
+  });
+
+  textDiv.innerHTML = `${textParagraphs.join('')}`
+  scroll.triggerSlides(true)
 }
 
 window.addEventListener("resize", init);

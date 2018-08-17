@@ -4,22 +4,27 @@ const slidesConfigs = require('./slides_configs').configs;
 
 // On every scroll event, check which element is on screen
 window.onscroll = function() {
-    var slideIds = Object.keys(slides);
-    for (var i = 0; i < slideIds.length; i++) {
-        var slideId = slideIds[i];
-        if (isElementOnScreen(slideId)) {
-            setActiveSlide(slideId);
-            break;
-        }
-    }
+  triggerSlides(false)
 };
+
+export function triggerSlides(reset) {
+  reset ? activeSlideId = undefined : false
+  var slideIds = Object.keys(slides);
+  for (var i = 0; i < slideIds.length; i++) {
+      var slideId = slideIds[i];
+      if (isElementOnScreen(slideId)) {
+          setActiveSlide(slideId);
+          break;
+      }
+  }
+}
 
 let activeSlideId = 's01';
 function setActiveSlide(slideId) {
     if (slideId === activeSlideId) return;
 
     let slide = slides[slideId]
-    // console.log(slide);
+
     slide.animation ? slide.animation() : false
 
     activeSlideId = slideId;
