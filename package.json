@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "nwb build-web-app",
+    "deploy": "nwb build-web-app && node deploy.js",
     "clean": "nwb clean-app",
     "start": "nwb serve-web-app --reload",
     "test": "nwb test",
@@ -15,6 +16,7 @@
     "d3v4": "^4.2.2"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "nwb": "0.21.x"
   },
   "author": "",
