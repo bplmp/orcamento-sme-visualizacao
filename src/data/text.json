@@ -1,34 +1,79 @@
 {
-  "paragraphs": [
-    {
-      "id": "p01",
-      "cat_1": "",
-      "cat_2": "",
-      "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação."
-    },
-    {
-      "id": "p02",
-      "cat_1": "",
-      "cat_2": "",
-      "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
-    },
-    {
-      "id": "p03",
-      "cat_1": "orc-pessoal",
-      "cat_2": "",
-      "text": "Esta é a parte que corresponde ao gasto com pessoal."
-    },
-    {
-      "id": "p04",
-      "cat_1": "orc-funcionamento_unidades",
-      "cat_2": "",
-      "text": "Esta, os gastos com a manutenção das escolas."
-    },
-    {
-      "id": "p05",
-      "cat_1": "orc-parcerias",
-      "cat_2": "",
-      "text": "Com parcerias."
-    }
-  ]
+  "paragraphs": {
+      "s01": {
+        "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação."
+      },
+      "s02": {
+        "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
+      },
+      "s03": {
+        "text": "Esta é a parte que corresponde ao gasto com pessoal, mais da metade de todo orçamento."
+      },
+      "s03_01": {
+        "text": "A maior parte dos gastos com pessoal são salários e benefícios dos professores."
+      },
+      "s03_02": {
+        "text": "O restante dos gastos são com gestores,"
+      },
+      "s03_03": {
+        "text": "estagiários e outros pequenos custos."
+      },
+      "s04": {
+        "text": "Esta outra parte são os gastos com o funcionamento das escolas e de outros prédios da Secretaria."
+      },
+      "s04_01": {
+        "text": "O maior custo é com limpeza,"
+      },
+      "s04_02": {
+        "text": "seguido por vigilância,"
+      },
+      "s04_03": {
+        "text": "água e esgoto, luz, e telefone,"
+      },
+      "s04_04": {
+        "text": "manutenção e aluguel de imóveis."
+      },
+      "s05": {
+        "text": "Além de construir e manter seus próprios prédios, a Secretaria também faz parcerias com outras entidades para prover educação."
+      },
+      "s05_01": {
+        "text": "Esta é a parte corresponde ao valor dessas parcerias."
+      },
+      "s05_02": {
+        "text": "Sua maior parte é repassada para Centros de Educação Infantil, também conhecidos como creches."
+      },
+      "s05_03": {
+        "text": "Outra parte é utilizada para a educação de pessoas com necessidades especiais."
+      },
+      "s05_04": {
+        "text": "E o restante com programas de Educação de Jovens e Adultos e outras parcerias."
+      },
+      "s06": {
+        "text": "Um outro grande custo da Secretaria é com a alimentação dos estudantes."
+      },
+      "s06_01": {
+        "text": "Boa parte é gasto com refeições compradas diretamente de fornecedores."
+      },
+      "s06_02": {
+        "text": "Mas a Secretaria também compra alimentos para produzir refeições,"
+      },
+      "s06_03": {
+        "text": "e nesse caso precisa pagar também pelo seu preparo e distribuição."
+      },
+      "s06_04": {
+        "text": "O restante é gasto com o programa Leve-Leite, que entrega leite de graça para famílias de baixa renda com crianças pequenas,"
+      },
+      "s06_05": {
+        "text": "e com repasse de verbas do Programa Nacional de Alimentação Escolar (PNAE) diretamente para as escolas."
+      },
+      "s07": {
+        "text": "A Secretaria também tem custos com materiais para os estudentes,"
+      },
+      "s07_01": {
+        "text": "como uniformes escolares"
+      },
+      "s07_02": {
+        "text": "e outros materias didáticos."
+      }
+  }
 }
