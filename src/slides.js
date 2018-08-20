@@ -93,27 +93,41 @@ export let slides = {
   "s04_04": {
     "cat_1": "orc-funcionamento_unidades",
     "cat_2": [
+      "orc-funcionamento_unidades-obras_reformas",
+    ],
+  },
+  "s04_05": {
+    "cat_1": "orc-funcionamento_unidades",
+    "cat_2": [
       "orc-funcionamento_unidades-manutencao",
       "orc-funcionamento_unidades-aluguel_imoveis",
     ],
   },
+  "s04_06": {
+    "cat_1": "orc-funcionamento_unidades",
+    "cat_2": [
+      "orc-funcionamento_unidades-ceu_outros",
+    ],
+  },
+  "s04_07": {
+    "cat_1": "orc-funcionamento_unidades",
+    "cat_2": [
+      "orc-funcionamento_unidades-eventos",
+    ],
+  },
   "s05": {
-    "cat_1": undefined,
+    "cat_1": "orc-parcerias",
     "cat_2": undefined,
   },
   "s05_01": {
     "cat_1": "orc-parcerias",
-    "cat_2": undefined,
+    "cat_2": ["orc-parcerias-creches"],
   },
   "s05_02": {
     "cat_1": "orc-parcerias",
-    "cat_2": ["orc-parcerias-creches"],
-  },
-  "s05_03": {
-    "cat_1": "orc-parcerias",
     "cat_2": ["orc-parcerias-ed_especial"],
   },
-  "s05_04": {
+  "s05_03": {
     "cat_1": "orc-parcerias",
     "cat_2": [
       "orc-parcerias-eja",
@@ -145,38 +159,50 @@ export let slides = {
     "cat_2": ["orc-alimentacao-pnae"],
   },
   "s07": {
-    "cat_1": "orc-uniforme_materiais",
+    "cat_1": "orc-transporte",
     "cat_2": undefined,
   },
   "s07_01": {
-    "cat_1": "orc-uniforme_materiais",
-    "cat_2": ["orc-uniforme_materiais-uniforme"],
+    "cat_1": "orc-transporte",
+    "cat_2": ["orc-transporte-teg"],
   },
   "s07_02": {
-    "cat_1": "orc-uniforme_materiais",
-    "cat_2": ["orc-uniforme_materiais-materiais"],
+    "cat_1": "orc-transporte",
+    "cat_2": ["orc-transporte-veiculos"],
   },
   "s08": {
-    "cat_1": "orc-transferencias",
+    "cat_1": "orc-uniforme_materiais",
     "cat_2": undefined,
   },
   "s08_01": {
-    "cat_1": "orc-transferencias",
-    "cat_2": ["orc-transferencias-ptrf"],
+    "cat_1": "orc-uniforme_materiais",
+    "cat_2": ["orc-uniforme_materiais-uniforme"],
+  },
+  "s08_02": {
+    "cat_1": "orc-uniforme_materiais",
+    "cat_2": ["orc-uniforme_materiais-materiais"],
   },
   "s09": {
-    "cat_1": "orc-ti",
+    "cat_1": "orc-transferencias",
     "cat_2": undefined,
   },
   "s09_01": {
+    "cat_1": "orc-transferencias",
+    "cat_2": ["orc-transferencias-ptrf"],
+  },
+  "s10": {
+    "cat_1": "orc-ti",
+    "cat_2": undefined,
+  },
+  "s10_01": {
     "cat_1": "orc-ti",
     "cat_2": ["orc-ti-prodam", "orc-ti-outros"],
   },
-  "s09_02": {
+  "s10_02": {
     "cat_1": "orc-ti",
     "cat_2": ["orc-ti-internet"],
   },
-  "s09_03": {
+  "s10_03": {
     "cat_1": "orc-ti",
     "cat_2": ["orc-ti-manutencao_equip_ti"],
   },

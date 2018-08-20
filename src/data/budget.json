@@ -9,9 +9,6 @@
       "name": "leve_leite",
       "size": 50826933.02
     }, {
-      "name": "outros",
-      "size": 7850.0
-    }, {
       "name": "pnae",
       "size": 19871110.0
     }, {
@@ -30,8 +27,14 @@
       "name": "aluguel_imoveis",
       "size": 17577437.31
     }, {
+      "name": "ceu_outros",
+      "size": 25619075.73
+    }, {
       "name": "eletricidade",
       "size": 44973126.74
+    }, {
+      "name": "eventos",
+      "size": 6497739.28
     }, {
       "name": "limpeza",
       "size": 406884941.54
@@ -42,17 +45,14 @@
       "name": "mobiliario",
       "size": 11702.0
     }, {
+      "name": "obras_reformas",
+      "size": 58263296.13
+    }, {
       "name": "telefone",
       "size": 5298664.84
     }, {
       "name": "vigilancia",
       "size": 181857045.36
-    }]
-  }, {
-    "name": "obras_reformas",
-    "children": [{
-      "name": "obras_reformas",
-      "size": 58263296.13
     }]
   }, {
     "name": "parcerias",
@@ -85,16 +85,25 @@
       "size": 2179419.19
     }]
   }, {
+    "name": "suporte_administrativo",
+    "children": [{
+      "name": "suporte_administrativo_outros",
+      "size": 5898537.07
+    }]
+  }, {
     "name": "ti",
     "children": [{
       "name": "internet",
       "size": 11271799.47
     }, {
+      "name": "manutencao",
+      "size": 983507.52
+    }, {
       "name": "manutencao_equip_ti",
       "size": 5937810.78
     }, {
       "name": "outros",
-      "size": 13863315.66
+      "size": 12879808.14
     }, {
       "name": "prodam",
       "size": 9824413.64
@@ -104,6 +113,15 @@
     "children": [{
       "name": "ptrf",
       "size": 41846569.91
+    }]
+  }, {
+    "name": "transporte",
+    "children": [{
+      "name": "teg",
+      "size": 194491392.92
+    }, {
+      "name": "veiculos",
+      "size": 15920269.5
     }]
   }, {
     "name": "uniforme_materiais",

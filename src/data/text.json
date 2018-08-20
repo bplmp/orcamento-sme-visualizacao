@@ -31,21 +31,27 @@
         "text": "água e esgoto, luz, e telefone,"
       },
       "s04_04": {
-        "text": "manutenção e aluguel de imóveis."
+        "text": "reformas e construções de novas unidades,"
+      },
+      "s04_05": {
+        "text": "manutenção e aluguel de imóveis,"
+      },
+      "s04_06": {
+        "text": "custos de manutenção dos CEUs, como guarda-vidas para as piscinas e operação dos auditórios,"
+      },
+      "s04_07": {
+        "text": "e eventos como peças e teatro e apresentações nas escolas."
       },
       "s05": {
         "text": "Além de construir e manter seus próprios prédios, a Secretaria também faz parcerias com outras entidades para prover educação."
       },
       "s05_01": {
-        "text": "Esta é a parte corresponde ao valor dessas parcerias."
+        "text": "Sua maior parte é repassada para os Centros de Educação Infantil, também conhecidos como creches."
       },
       "s05_02": {
-        "text": "Sua maior parte é repassada para Centros de Educação Infantil, também conhecidos como creches."
-      },
-      "s05_03": {
         "text": "Outra parte é utilizada para a educação de pessoas com necessidades especiais."
       },
-      "s05_04": {
+      "s05_03": {
         "text": "E o restante com programas de Educação de Jovens e Adultos e outras parcerias."
       },
       "s06": {
@@ -67,30 +73,39 @@
         "text": "e com repasse de verbas do Programa Nacional de Alimentação Escolar (PNAE) diretamente para as escolas."
       },
       "s07": {
-        "text": "A Secretaria também tem custos com materiais para os estudentes,"
+        "text": "Outra parte grande são os custos com transporte."
       },
       "s07_01": {
-        "text": "como uniformes escolares"
+        "text": "Sua grande maioria é gasta com o Transporte Escolar Gratuito (TEG), disponível quando a Secretaria não consegue matricular as crianças em até 2 km de distância da escola, ou em outros casos especiais."
       },
       "s07_02": {
-        "text": "e outros materias didáticos."
+         "text": "O restante é utilizado com aluguel de veículos como ônibus de excursões e carros."
       },
       "s08": {
-        "text": "A Secretaria também repassa uma parte dos seus recursos diretamente para as unidades escolares."
+        "text": "A Secretaria também tem custos com materiais para os estudentes,"
       },
       "s08_01": {
-        "text": "Os repasses são feitos através de Associações de Pais e Mestres (APMs) e servem para descentralizar a administração e ampliar a autonomia das escolas."
+        "text": "como uniformes escolares..."
+      },
+      "s08_02": {
+        "text": "e outros materias didáticos."
       },
       "s09": {
-        "text": "A Educação também tem custos com tecnologia da informação (TI)."
+        "text": "A Secretaria também repassa uma parte dos seus recursos diretamente para as unidades escolares."
       },
       "s09_01": {
+        "text": "Os repasses são feitos através de Associações de Pais e Mestres (APMs) e servem para descentralizar a administração e ampliar a autonomia das escolas."
+      },
+      "s10": {
+        "text": "A Educação também tem custos com tecnologia da informação (TI)."
+      },
+      "s10_01": {
         "text": "Esses incluem gastos com desenvolvimento, manutenção de softwares e sistemas,"
       },
-      "s09_02": {
+      "s10_02": {
         "text": "fornecimento de internet para todas unidades escolares,"
       },
-      "s09_03": {
+      "s10_03": {
         "text": "e manutenção de equipamentos de TI, como servidores e centros de dados."
       }
   }
