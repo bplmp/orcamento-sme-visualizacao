@@ -133,6 +133,14 @@ function init() {
     return d.size;
   }
 
+  setSlideText()
+
+  scroll.triggerSlides(true)
+}
+
+window.addEventListener("resize", init);
+
+function setSlideText() {
   let textParagraphs = [];
   Object.keys(slides).forEach(function(key, index) {
     let slide = slides[key]
@@ -165,7 +173,4 @@ function init() {
   });
 
   textDiv.innerHTML = `${textParagraphs.join('')}`
-  scroll.triggerSlides(true)
 }
-
-window.addEventListener("resize", init);
