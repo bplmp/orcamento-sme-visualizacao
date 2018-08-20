@@ -1,6 +1,7 @@
 const d3 = require('d3v4');
 const slidesConfigs = require('./slides_configs').configs;
 const textData = require('./data/text.json');
+const categoriesData = require('./data/categories.json');
 
 function fadeIn(selector) {
   d3.selectAll(selector)
@@ -164,4 +165,6 @@ Object.keys(slides).forEach(function(key, index) {
   // set text from json file
   let slideText = textData.paragraphs[key]
   slideText ? slide.text = slideText.text : slide.text = '&nbsp;'
+  let slideMainCategoryText = categoriesData[slide.cat_1]
+  slideMainCategoryText ? slide.cat_1_text = slideMainCategoryText.text : false
 });

@@ -32,3 +32,8 @@ body {
 .text-paragraph h1 {
   font-weight: 400;
 }
+.text-category {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin: 0;
+}

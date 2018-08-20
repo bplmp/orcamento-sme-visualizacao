@@ -49,7 +49,7 @@ function init() {
   var height = chartDiv.clientHeight;
 
   var fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
-  color = d3.scaleOrdinal(d3.schemeCategory20.map(fader)),
+  color = d3.scaleOrdinal(d3.schemeCategory10.map(fader)),
   format = d3.format(",d");
 
   var treemap = d3.treemap()
@@ -158,6 +158,8 @@ function init() {
     //   })
     // }
     // let valueHtml = slideValues.length ? `<p>${slideValues.join(',&nbsp;&nbsp;')} milhões</p>` : ''
+    // let categoryText = slide.cat_1_text ? `<p class="text-category">${slide.cat_1_text}</p>` : ''
+    // let html = `<div class="text-paragraph" id="${id}">${categoryText}<h1>${text}</h1>${valueHtml}</div>`
     let html = `<div class="text-paragraph" id="${id}"><h1>${text}</h1>${valueHtml}</div>`
     textParagraphs.push(html)
   });
