@@ -156,6 +156,30 @@ export let slides = {
     "cat_1": "orc-uniforme_materiais",
     "cat_2": ["orc-uniforme_materiais-materiais"],
   },
+  "s08": {
+    "cat_1": "orc-transferencias",
+    "cat_2": undefined,
+  },
+  "s08_01": {
+    "cat_1": "orc-transferencias",
+    "cat_2": ["orc-transferencias-ptrf"],
+  },
+  "s09": {
+    "cat_1": "orc-ti",
+    "cat_2": undefined,
+  },
+  "s09_01": {
+    "cat_1": "orc-ti",
+    "cat_2": ["orc-ti-prodam", "orc-ti-outros"],
+  },
+  "s09_02": {
+    "cat_1": "orc-ti",
+    "cat_2": ["orc-ti-internet"],
+  },
+  "s09_03": {
+    "cat_1": "orc-ti",
+    "cat_2": ["orc-ti-manutencao_equip_ti"],
+  },
 }
 
 Object.keys(slides).forEach(function(key, index) {
