@@ -200,7 +200,7 @@ export let slides = {
   },
   "s10_02": {
     "cat_1": "orc-ti",
-    "cat_2": ["orc-ti-prodam", "orc-ti-outros"],
+    "cat_2": ["orc-ti-manutencao_software_sistemas", "orc-ti-outros"],
   },
   "s10_03": {
     "cat_1": "orc-ti",
