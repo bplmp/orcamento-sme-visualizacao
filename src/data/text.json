@@ -1,115 +1,115 @@
 {
   "paragraphs": {
-      "s01": {
-        "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação.<br>&darr;"
-      },
-      "s02": {
-        "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
-      },
-      "s03": {
-        "text": "Esta é a parte que corresponde ao gasto com pessoal, mais da metade de todo orçamento."
-      },
-      "s03_01": {
-        "text": "A maior parte dos gastos com pessoal são salários e benefícios dos professores, coordenadores e diretores."
-      },
-      "s03_02": {
-        "text": "O restante dos gastos são com gestores,"
-      },
-      "s03_03": {
-        "text": "estagiários e outros pequenos custos."
-      },
-      "s04": {
-        "text": "Esta outra parte são os gastos com o funcionamento das escolas e de outros prédios da Secretaria."
-      },
-      "s04_01": {
-        "text": "O maior custo é com limpeza,"
-      },
-      "s04_02": {
-        "text": "seguido por vigilância,"
-      },
-      "s04_03": {
-        "text": "água e esgoto, luz, e telefone,"
-      },
-      "s04_04": {
-        "text": "reformas e construções de novas unidades,"
-      },
-      "s04_05": {
-        "text": "manutenção e aluguel de imóveis,"
-      },
-      "s04_06": {
-        "text": "custos de manutenção dos CEUs, como guarda-vidas para as piscinas e operação dos auditórios,"
-      },
-      "s04_07": {
-        "text": "e eventos como peças e teatro e apresentações nas escolas."
-      },
-      "s05": {
-        "text": "Além de construir e manter seus próprios prédios, a Secretaria também faz parcerias com outras entidades para prover educação."
-      },
-      "s05_01": {
-        "text": "Sua maior parte é repassada para os Centros de Educação Infantil, também conhecidos como creches."
-      },
-      "s05_02": {
-        "text": "Outra parte é utilizada para a educação de pessoas com necessidades especiais."
-      },
-      "s05_03": {
-        "text": "E o restante com programas de Educação de Jovens e Adultos e outras parcerias."
-      },
-      "s06": {
-        "text": "Um outro grande custo da Secretaria é com a alimentação dos estudantes."
-      },
-      "s06_01": {
-        "text": "Boa parte é gasto com refeições compradas diretamente de fornecedores."
-      },
-      "s06_02": {
-        "text": "Mas a Secretaria também compra alimentos para produzir refeições,"
-      },
-      "s06_03": {
-        "text": "e nesse caso precisa pagar também pelo seu preparo e distribuição."
-      },
-      "s06_04": {
-        "text": "O restante é gasto com o programa Leve-Leite, que entrega leite de graça para famílias de baixa renda com crianças pequenas,"
-      },
-      "s06_05": {
-        "text": "e com repasse de verbas do Programa Nacional de Alimentação Escolar (PNAE) diretamente para as escolas."
-      },
-      "s07": {
-        "text": "Outra parte grande são os custos com transporte."
-      },
-      "s07_01": {
-        "text": "Sua grande maioria é gasta com o Transporte Escolar Gratuito (TEG), disponível quando a Secretaria não consegue matricular as crianças em até 2 km de distância da escola, ou em outros casos especiais."
-      },
-      "s07_02": {
-         "text": "O restante é utilizado com aluguel de veículos como ônibus de excursões e carros."
-      },
-      "s08": {
-        "text": "A Secretaria também tem custos com materiais para os estudantes,"
-      },
-      "s08_01": {
-        "text": "como uniformes escolares"
-      },
-      "s08_02": {
-        "text": "e outros materias didáticos."
-      },
-      "s09": {
-        "text": "A Secretaria também repassa uma parte dos seus recursos diretamente para as unidades escolares."
-      },
-      "s09_01": {
-        "text": "Os repasses são feitos através de Associações de Pais e Mestres (APMs) e servem para descentralizar a administração e ampliar a autonomia das escolas."
-      },
-      "s10": {
-        "text": "A Educação também tem custos com tecnologia da informação (TI)."
-      },
-      "s10_01": {
-        "text": "Em 2017, foi feita uma grande compra de notebooks para a Educação."
-      },
-      "s10_02": {
-        "text": "Os gastos com TI também incluem desenvolvimento, manutenção de softwares e sistemas,"
-      },
-      "s10_03": {
-        "text": "fornecimento de internet para todas unidades escolares,"
-      },
-      "s10_04": {
-        "text": "e supporte e assistência técnica para operação da TI."
-      }
+    "s01": {
+      "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação.<br>&darr;"
+    },
+    "s02": {
+      "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
+    },
+    "s03": {
+      "text": "Esta é a parte que corresponde ao gasto com pessoal, mais da metade de todo orçamento."
+    },
+    "s03_01": {
+      "text": "A maior parte dos gastos com pessoal são salários e benefícios dos professores, coordenadores e diretores."
+    },
+    "s03_02": {
+      "text": "O restante dos gastos são com gestores,"
+    },
+    "s03_03": {
+      "text": "estagiários e outros pequenos custos."
+    },
+    "s04": {
+      "text": "Esta outra parte são os gastos com o funcionamento das escolas e de outros prédios da Secretaria."
+    },
+    "s04_01": {
+      "text": "O maior custo é com limpeza,"
+    },
+    "s04_02": {
+      "text": "seguido por vigilância,"
+    },
+    "s04_03": {
+      "text": "água e esgoto, luz, e telefone,"
+    },
+    "s04_04": {
+      "text": "reformas e construções de novas unidades,"
+    },
+    "s04_05": {
+      "text": "manutenção e aluguel de imóveis,"
+    },
+    "s04_06": {
+      "text": "custos de manutenção dos CEUs, como guarda-vidas para as piscinas e operação dos auditórios,"
+    },
+    "s04_07": {
+      "text": "e eventos como peças e teatro e apresentações nas escolas."
+    },
+    "s05": {
+      "text": "Além de construir e manter seus próprios prédios, a Secretaria também faz parcerias com outras entidades para prover educação."
+    },
+    "s05_01": {
+      "text": "Sua maior parte é repassada para os Centros de Educação Infantil, também conhecidos como creches."
+    },
+    "s05_02": {
+      "text": "Outra parte é utilizada para a educação de pessoas com necessidades especiais."
+    },
+    "s05_03": {
+      "text": "E o restante com programas de Educação de Jovens e Adultos e outras parcerias."
+    },
+    "s06": {
+      "text": "Um outro grande custo da Secretaria é com a alimentação dos estudantes."
+    },
+    "s06_01": {
+      "text": "Boa parte é gasto com refeições compradas diretamente de fornecedores."
+    },
+    "s06_02": {
+      "text": "Mas a Secretaria também compra alimentos para produzir refeições,"
+    },
+    "s06_03": {
+      "text": "e nesse caso precisa pagar também pelo seu preparo e distribuição."
+    },
+    "s06_04": {
+      "text": "O restante é gasto com o programa Leve-Leite, que entrega leite de graça para famílias de baixa renda com crianças pequenas,"
+    },
+    "s06_05": {
+      "text": "e com repasse de verbas do Programa Nacional de Alimentação Escolar (PNAE) diretamente para as escolas."
+    },
+    "s07": {
+      "text": "Outra parte grande são os custos com transporte."
+    },
+    "s07_01": {
+      "text": "Sua grande maioria é gasta com o Transporte Escolar Gratuito (TEG), disponível quando a Secretaria não consegue matricular as crianças em até 2 km de distância da escola, ou em outros casos especiais."
+    },
+    "s07_02": {
+      "text": "O restante é utilizado com aluguel de veículos como ônibus de excursões e carros."
+    },
+    "s08": {
+      "text": "A Secretaria também tem custos com materiais para os estudantes,"
+    },
+    "s08_01": {
+      "text": "como uniformes escolares"
+    },
+    "s08_02": {
+      "text": "e outros materias didáticos."
+    },
+    "s09": {
+      "text": "A Secretaria também repassa uma parte dos seus recursos diretamente para as unidades escolares."
+    },
+    "s09_01": {
+      "text": "Os repasses são feitos através de Associações de Pais e Mestres (APMs) e servem para descentralizar a administração e ampliar a autonomia das escolas."
+    },
+    "s10": {
+      "text": "A Educação também tem custos com tecnologia da informação (TI)."
+    },
+    "s10_01": {
+      "text": "Em 2017, foi feita uma grande compra de notebooks para a Educação."
+    },
+    "s10_02": {
+      "text": "Os gastos com TI também incluem desenvolvimento, manutenção de softwares e sistemas,"
+    },
+    "s10_03": {
+      "text": "fornecimento de internet para todas unidades escolares,"
+    },
+    "s10_04": {
+      "text": "e supporte e assistência técnica para operação da TI."
+    }
   }
 }
