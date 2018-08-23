@@ -10,14 +10,18 @@
     "start": "nwb serve-web-app --reload",
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "test:watch": "nwb test --server",
+    "text:export": "node text-export.js",
+    "text:import": "node text-import.js"
   },
   "dependencies": {
     "d3v4": "^4.2.2",
     "numeral": "^2.0.6"
   },
   "devDependencies": {
+    "csvtojson": "^2.0.8",
     "gh-pages": "^1.2.0",
+    "json-beautify": "^1.0.1",
     "nwb": "0.21.x"
   },
   "author": "",
