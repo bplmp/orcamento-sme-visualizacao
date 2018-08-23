@@ -1,7 +1,7 @@
 {
   "paragraphs": {
       "s01": {
-        "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação."
+        "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação.<br>&darr;"
       },
       "s02": {
         "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
@@ -10,7 +10,7 @@
         "text": "Esta é a parte que corresponde ao gasto com pessoal, mais da metade de todo orçamento."
       },
       "s03_01": {
-        "text": "A maior parte dos gastos com pessoal são salários e benefícios dos professores."
+        "text": "A maior parte dos gastos com pessoal são salários e benefícios dos professores, coordenadores e diretores."
       },
       "s03_02": {
         "text": "O restante dos gastos são com gestores,"
@@ -82,10 +82,10 @@
          "text": "O restante é utilizado com aluguel de veículos como ônibus de excursões e carros."
       },
       "s08": {
-        "text": "A Secretaria também tem custos com materiais para os estudentes,"
+        "text": "A Secretaria também tem custos com materiais para os estudantes,"
       },
       "s08_01": {
-        "text": "como uniformes escolares..."
+        "text": "como uniformes escolares"
       },
       "s08_02": {
         "text": "e outros materias didáticos."
@@ -100,13 +100,16 @@
         "text": "A Educação também tem custos com tecnologia da informação (TI)."
       },
       "s10_01": {
-        "text": "Esses incluem gastos com desenvolvimento, manutenção de softwares e sistemas,"
+        "text": "Em 2017, foi feita uma grande compra de notebooks para a Educação."
       },
       "s10_02": {
-        "text": "fornecimento de internet para todas unidades escolares,"
+        "text": "Os gastos com TI também incluem desenvolvimento, manutenção de softwares e sistemas,"
       },
       "s10_03": {
-        "text": "e manutenção de equipamentos de TI, como servidores e centros de dados."
+        "text": "fornecimento de internet para todas unidades escolares,"
+      },
+      "s10_04": {
+        "text": "e supporte e assistência técnica para operação da TI."
       }
   }
 }

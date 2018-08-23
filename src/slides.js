@@ -196,13 +196,17 @@ export let slides = {
   },
   "s10_01": {
     "cat_1": "orc-ti",
-    "cat_2": ["orc-ti-prodam", "orc-ti-outros"],
+    "cat_2": ["orc-ti-compra_notebooks"],
   },
   "s10_02": {
     "cat_1": "orc-ti",
-    "cat_2": ["orc-ti-internet"],
+    "cat_2": ["orc-ti-prodam", "orc-ti-outros"],
   },
   "s10_03": {
+    "cat_1": "orc-ti",
+    "cat_2": ["orc-ti-internet"],
+  },
+  "s10_04": {
     "cat_1": "orc-ti",
     "cat_2": ["orc-ti-manutencao_equip_ti"],
   },

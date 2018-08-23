@@ -4,70 +4,70 @@
     "name": "alimentacao",
     "children": [{
       "name": "insumos",
-      "size": 194498042.16
+      "size": 231123711.86
     }, {
       "name": "leve_leite",
-      "size": 50826933.02
+      "size": 54456453.89
     }, {
       "name": "pnae",
-      "size": 19871110.0
+      "size": 19721738.0
     }, {
       "name": "prep_dist",
-      "size": 52905599.38
+      "size": 57732278.68
     }, {
       "name": "refeicoes",
-      "size": 328161844.67
+      "size": 344783132.32
     }]
   }, {
     "name": "funcionamento_unidades",
     "children": [{
       "name": "agua_esgoto",
-      "size": 93020801.3
+      "size": 107440314.11
     }, {
       "name": "aluguel_imoveis",
-      "size": 17577437.31
+      "size": 18270620.03
     }, {
       "name": "ceu_outros",
-      "size": 25619075.73
+      "size": 27682515.05
     }, {
       "name": "eletricidade",
-      "size": 44973126.74
+      "size": 50882339.96
     }, {
       "name": "eventos",
       "size": 6497739.28
     }, {
       "name": "limpeza",
-      "size": 406884941.54
+      "size": 424731067.12
     }, {
       "name": "manutencao",
-      "size": 17065857.04
+      "size": 19662297.4
     }, {
       "name": "mobiliario",
-      "size": 11702.0
+      "size": 7332216.48
     }, {
       "name": "obras_reformas",
-      "size": 58263296.13
+      "size": 78704729.13
     }, {
       "name": "telefone",
-      "size": 5298664.84
+      "size": 6216973.48
     }, {
       "name": "vigilancia",
-      "size": 181857045.36
+      "size": 198770122.52
     }]
   }, {
     "name": "parcerias",
     "children": [{
       "name": "creches",
-      "size": 1954064406.19
+      "size": 1962607935.7
     }, {
       "name": "ed_especial",
-      "size": 36483656.53
+      "size": 36601537.99
     }, {
       "name": "eja",
-      "size": 10687166.22
+      "size": 10942761.36
     }, {
       "name": "outros",
-      "size": 3005697.93
+      "size": 3635450.38
     }]
   }, {
     "name": "pessoal",
@@ -76,10 +76,10 @@
       "size": 5872021815.26
     }, {
       "name": "estagios",
-      "size": 33448144.67
+      "size": 36592521.92
     }, {
       "name": "gestores",
-      "size": 343097216.08
+      "size": 343404844.62
     }, {
       "name": "outros",
       "size": 2179419.19
@@ -88,25 +88,28 @@
     "name": "suporte_administrativo",
     "children": [{
       "name": "suporte_administrativo_outros",
-      "size": 5898537.07
+      "size": 9250384.7
     }]
   }, {
     "name": "ti",
     "children": [{
+      "name": "compra_notebooks",
+      "size": 40021740.0
+    }, {
       "name": "internet",
-      "size": 11271799.47
+      "size": 13518565.06
     }, {
       "name": "manutencao",
-      "size": 983507.52
+      "size": 1123596.59
     }, {
       "name": "manutencao_equip_ti",
-      "size": 5937810.78
+      "size": 6459787.91
     }, {
       "name": "outros",
-      "size": 12879808.14
+      "size": 13577938.61
     }, {
       "name": "prodam",
-      "size": 9824413.64
+      "size": 11357797.01
     }]
   }, {
     "name": "transferencias",
@@ -118,19 +121,19 @@
     "name": "transporte",
     "children": [{
       "name": "teg",
-      "size": 194491392.92
+      "size": 211016396.95
     }, {
       "name": "veiculos",
-      "size": 15920269.5
+      "size": 17627189.21
     }]
   }, {
     "name": "uniforme_materiais",
     "children": [{
       "name": "materiais",
-      "size": 26113731.88
+      "size": 55646292.47
     }, {
       "name": "uniforme",
-      "size": 101825344.25
+      "size": 203651680.76
     }]
   }]
 }
