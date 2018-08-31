@@ -31,7 +31,7 @@ function fadeIn(selector) {
 }
 
 function fadeAllOut() {
-  d3.select('#chart').selectAll('g')
+  d3.select('.treemap').selectAll('g')
   .transition()
   .duration(slidesConfigs.duration)
   .style('opacity', 0.2)
@@ -60,7 +60,7 @@ function defaultAnimation(slide) {
 }
 
 export let slides = {
-  "s01": {
+  "i01": {
     "cat_1": undefined,
     "cat_2": undefined,
     "animation": function () {
@@ -70,10 +70,104 @@ export let slides = {
         .style('opacity', 0)
     },
   },
-  "s02": {
+  "i02": {
+    "cat_2": undefined,
+    "cat_2": undefined,
+    "animation": function () {
+      d3.select('#chart-pmsp').selectAll('g')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', 0.2)
+    },
+  },
+  "i03": {
+    "cat_1": "pmsp-SME",
+    "cat_2": undefined,
+    "animation": function () {
+      d3.select('#chart-pmsp').selectAll('g')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', 0.2)
+
+      d3.select('#g-pmsp-SME')
+      .transition()
+      .duration(slidesConfigs.duration)
+      .style('opacity', 0.7)
+
+      if (slides['i04'].prevWidth && d3.select('#pmsp-SME').node().getBoundingClientRect().width !== slides['i04'].prevWidth) {
+        // return to previous
+        d3.select('#pmsp-SME')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .attrTween("height", function() {
+          return d3.interpolateNumber(d3.select(this).attr("height"), slides['i04'].prevHeight);
+        })
+        .attrTween("width", function() {
+          return d3.interpolateNumber(d3.select(this).attr("height"), slides['i04'].prevWidth);
+        });
+      }
+    }
+  },
+  "i04": {
+    "cat_2": undefined,
+    "cat_2": undefined,
+    "animation": function () {
+      // store previous size for rollback
+      let svgSME = d3.select('#pmsp-SME').node();
+      let svgSMEHeight = svgSME.getBoundingClientRect().height;
+      let svgSMEWidth = svgSME.getBoundingClientRect().width;
+      if (!slides['i04'].prevWidth) {
+        slides['i04'].prevHeight = svgSMEHeight
+        slides['i04'].prevWidth = svgSMEWidth
+      }
+      console.log(slides['i04'].prevHeight);
+
+      let svg = d3.select('#chart-pmsp').node();
+      let svgHeight = svg.getBoundingClientRect().height;
+      let svgWidth = svg.getBoundingClientRect().width;
+
+      // turn other rectangles off
+      d3.selectAll('g')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', 0)
+      d3.select('#g-pmsp-SME')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', 0.7)
+
+      // make sme full screen
+      d3.select('#pmsp-SME')
+      .transition()
+      .duration(slidesConfigs.duration)
+      .attrTween("height", function() {
+        return d3.interpolateNumber(d3.select(this).attr("height"), svgHeight);
+      })
+      .attrTween("width", function() {
+        return d3.interpolateNumber(d3.select(this).attr("height"), svgWidth);
+      });
+    }
+  },
+  "s01": {
     "cat_1": undefined,
     "cat_2": undefined,
+    "animation": function () {
+      d3.select('#chart-pmsp').selectAll('g')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', 0)
+      d3.select('#chart-sme').selectAll('g')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', 0.2)
+      setTimeout(function() {
+      }, slidesConfigs.duration);
+    },
   },
+  // "s02": {
+  //   "cat_1": undefined,
+  //   "cat_2": undefined,
+  // },
   "s03": {
     "cat_1": "orc-pessoal",
     "cat_2": undefined,

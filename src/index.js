@@ -1,7 +1,8 @@
 import './style/main.css'
 
 const slides = require('./slides');
-const data = require('./data/budget.json');
+const dataSME = require('./data/budget.json');
+const dataPMSP = require('./data/pmsp_budget.json');
 
 const scroll = require('./scroll');
 const treemap = require('./treemap');
@@ -18,11 +19,18 @@ window.onload = function() {
   init()
 };
 
-function init() {
-  treemap.create("chart", data)
+export function init() {
+  treemap.create("chart-sme", dataSME)
+  treemap.create("chart-pmsp", dataPMSP)
   slides.setSlideText()
   // trigger slides to begin
   scroll.triggerSlides(true)
 }
 
-window.addEventListener("resize", init);
+window.addEventListener("resize", function () {
+  // HACK:
+  slides.slides['i04'].prevWidth = undefined
+  slides.slides['i04'].prevHeight = undefined
+  
+  init()
+});

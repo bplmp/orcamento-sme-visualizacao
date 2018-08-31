@@ -8,7 +8,7 @@ body {
   overflow-y: scroll;
 }
 
-#chart-wrapper {
+.chart-wrapper {
   position: fixed;
   left: 5px;
   right: 5px;

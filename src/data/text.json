@@ -1,10 +1,19 @@
 {
   "paragraphs": {
-    "s01": {
-      "text": "Imagine que sua tela representa todo o orçamento da Secretaria de Educação.<br>&darr;"
+    "i01": {
+      "text": "Imagine que sua tela representa todo o orçamento da Prefeitura de São Paulo.<br>&darr;"
     },
-    "s02": {
-      "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Secretaria gasta seu orçamento."
+    "i02": {
+      "text": "Agora, dividimos a tela em quadrados correspondendo a cada uma das Secretarias e Órgãos da Prefeitura."
+    },
+    "i03": {
+      "text": "Esta é a parte que corresponde ao orçamento da Secretaria de Educação"
+    },
+    "i04": {
+      "text": "Vamos olhar agora só para o orçamento da Educação."
+    },
+    "s01": {
+      "text": "Agora, vamos começar a dividir a tela em partes, para mostrar como a Educação gasta seu orçamento."
     },
     "s03": {
       "text": "Esta é a parte que corresponde ao gasto com pessoal, mais da metade de todo orçamento."

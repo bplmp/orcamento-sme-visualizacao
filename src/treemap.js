@@ -41,7 +41,9 @@ export function create(elementId, data) {
   .attr("height", function(d) { return d.y1 - d.y0; })
   .attr("stroke", "#fff")
   .attr("stroke-width", 0)
-  .attr("fill", function(d) { return color(d.parent.data.id); });
+  .attr("fill", function(d) {
+      return elementId === "chart-pmsp" ? "#333" : color(d.parent.data.id);
+  });
 
   cell.append("clipPath")
   .attr("id", function(d) { return "clip-" + d.data.id; })
