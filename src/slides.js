@@ -2,6 +2,26 @@ const d3 = require('d3v4');
 const slidesConfigs = require('./slides_configs').configs;
 const textData = require('./data/text.json');
 const categoriesData = require('./data/categories.json');
+const quantititesData = require('./data/quant.json');
+
+const numeral = require('numeral');
+numeral.register('locale', 'br', {
+    delimiters: {
+        thousands: '.',
+        decimal: ','
+    },
+    abbreviations: {
+        thousand: 'mil',
+        million: ' milhões',
+        billion: ' bilhões',
+        trillion: ' trilhões'
+    },
+    currency: {
+        symbol: 'R$'
+    }
+});
+numeral.locale('br');
+numeral.defaultFormat('0,0.00');
 
 function fadeIn(selector) {
   d3.selectAll(selector)
@@ -68,7 +88,7 @@ export let slides = {
   },
   "s03_03": {
     "cat_1": "orc-pessoal",
-    "cat_2": ["orc-pessoal-estagios", "orc-pessoal-outros"],
+    "cat_2": ["orc-pessoal-estagios", "orc-pessoal-outros", "orc-pessoal-adiantamento"],
   },
   "s04": {
     "cat_1": "orc-funcionamento_unidades",
@@ -222,3 +242,54 @@ Object.keys(slides).forEach(function(key, index) {
   let slideMainCategoryText = categoriesData[slide.cat_1]
   slideMainCategoryText ? slide.cat_1_text = slideMainCategoryText.text : false
 });
+
+export function setSlideText() {
+  let textParagraphs = [];
+  Object.keys(slides).forEach(function(key, index) {
+    let slide = slides[key]
+    let text = slide.text
+    let id = key
+    let slideMainCategory = slide.cat_1
+    let slideCategories = slide.cat_2
+    let slideValues = []
+    if (slideCategories) {
+      slideCategories.forEach(function (cat) {
+        let slideRect = document.getElementById(cat)
+        let slideValue = slideRect ? slideValues.push(parseFloat(slideRect.dataset.value)) : false
+      })
+    } else if (slideMainCategory) {
+      let slideRects = document.querySelectorAll('[id^="' + slideMainCategory + '"]')
+      slideRects.forEach(function (rect) {
+        let slideValue = rect ? slideValues.push(parseFloat(rect.dataset.value)) : false
+      })
+    }
+    let totalValue = slideValues.reduce((a, b) => a + b, 0)
+
+    let students = quantititesData.children.find(x => x.name === 'alunos').size
+    let perStudentValue = totalValue / students
+
+    totalValue = numeral(totalValue).format('$ 0.00 a')
+    perStudentValue = numeral(perStudentValue).format()
+
+    let valueHtml = slideValues.length ? `<p>${totalValue}</p>` : ''
+    // let valueHtml = slideValues.length ? `<p>${totalValue}</p><p>${perStudentValue} por aluno</p>` : ''
+
+    // alternative: display all values
+    // if (slideCategories) {
+    //   slideCategories.forEach(function (cat) {
+    //     let slideRect = document.getElementById(cat)
+    //     let slideValue = slideRect ? numeral(parseFloat(slideRect.dataset.value) / 100000).format() : false
+    //     slideValues.push(slideValue)
+    //   })
+    // }
+    // let valueHtml = slideValues.length ? `<p>${slideValues.join(',&nbsp;&nbsp;')} milhões</p>` : ''
+    // let categoryText = slide.cat_1_text ? `<p class="text-category">${slide.cat_1_text}</p>` : ''
+    // let html = `<div class="text-paragraph" id="${id}">${categoryText}<h1>${text}</h1>${valueHtml}</div>`
+
+    let html = `<div class="text-paragraph" id="${id}"><h1>${text}</h1>${valueHtml}</div>`
+    textParagraphs.push(html)
+  });
+
+  let textDiv = document.querySelector('#text')
+  textDiv.innerHTML = `${textParagraphs.join('')}`
+}
