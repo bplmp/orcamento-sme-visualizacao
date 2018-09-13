@@ -27,35 +27,49 @@ function fadeIn(selector) {
   d3.selectAll(selector)
   .transition()
   .duration(slidesConfigs.duration)
-  .style('opacity', 0.7)
+  .style('opacity', slidesConfigs.opacityMed)
 }
 
 function fadeAllOut() {
   d3.select('.treemap').selectAll('g')
   .transition()
   .duration(slidesConfigs.duration)
-  .style('opacity', 0.2)
+  .style('opacity', slidesConfigs.opacityLow)
+
+  d3.select('.treemap').selectAll('g').selectAll('rect')
+  .transition()
+  .duration(slidesConfigs.duration)
+  .attr('stroke', '#fff')
+  .attr('stroke-width', '0')
 }
 
-function fadeGroup(categories, opacity) {
+function fadeGroup(selector, categories, opacity) {
   categories.forEach(function (category) {
-    d3.selectAll('#g-' + category)
+    d3.selectAll(selector + category)
     .transition()
     .duration(slidesConfigs.duration)
     .style('opacity', opacity)
+
+    d3.selectAll(selector + category)
+    .raise()
+
+    d3.selectAll(selector + category).select('rect')
+    .transition()
+    .duration(slidesConfigs.duration)
+    .attr('stroke', '#fff')
+    .attr('stroke-width', '4')
+
   })
 }
 
 function defaultAnimation(slide) {
   fadeAllOut()
   if (slide.cat_1) {
-    d3.selectAll('.' + slide.cat_1)
-    .transition()
-    .duration(slidesConfigs.duration)
-    .style('opacity', 0.7)
+    // fadeGroup('.', [slide.cat_1], slidesConfigs.opacityMed)
+    fadeIn('.' + slide.cat_1, slidesConfigs.opacityMed)
   }
   if (slide.cat_2) {
-    fadeGroup(slide.cat_2, 1)
+    fadeGroup('#g-', slide.cat_2, slidesConfigs.opacityHigh)
   }
 }
 
@@ -67,7 +81,7 @@ export let slides = {
       d3.selectAll('g')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0)
+        .style('opacity', slidesConfigs.opacityOff)
     },
   },
   "i02": {
@@ -77,26 +91,71 @@ export let slides = {
       d3.select('#chart-pmsp').selectAll('g')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0.2)
+        .style('opacity', slidesConfigs.opacityLow)
     },
   },
   "i03": {
-    "cat_1": "pmsp-SME",
+    "cat_1": "pmsp-SME-edu-sme",
     "cat_2": undefined,
     "animation": function () {
       d3.select('#chart-pmsp').selectAll('g')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0.2)
+        .style('opacity', slidesConfigs.opacityLow)
 
-      d3.select('#g-pmsp-SME')
+      d3.select('#g-pmsp-SME-edu-sme')
       .transition()
       .duration(slidesConfigs.duration)
-      .style('opacity', 0.7)
+      .style('opacity', slidesConfigs.opacityMed)
 
-      if (slides['i04'].prevWidth && d3.select('#pmsp-SME').node().getBoundingClientRect().width !== slides['i04'].prevWidth) {
+      if (slides['i04'].prevWidth && d3.select('#pmsp-SME-edu-sme').node().getBoundingClientRect().width !== slides['i04'].prevWidth) {
         // return to previous
-        d3.select('#pmsp-SME')
+        d3.select('#pmsp-SME-edu-sme')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .attrTween("height", function() {
+          return d3.interpolateNumber(d3.select(this).attr("height"), slides['i04'].prevHeight);
+        })
+        .attrTween("width", function() {
+          return d3.interpolateNumber(d3.select(this).attr("height"), slides['i04'].prevWidth);
+        });
+      }
+    }
+  },
+  "i03_01": {
+    "cat_1": "pmsp-SME-edu-sme",
+    "cat_2": [
+      "pmsp-SMT-edu-outros",
+      "pmsp-EGM-edu-outros",
+      "pmsp-FUNDIP-edu-outros",
+      "pmsp-SMPIR-edu-outros",
+      "pmsp-FPETC-edu-outros",
+      "pmsp-SMADS-edu-outros",
+      "pmsp-SMTE-edu-outros",
+      "pmsp-SMIT-edu-outros",
+    ],
+    "animation": function () {
+      d3.select('#chart-pmsp').selectAll('g')
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', slidesConfigs.opacityLow)
+
+      d3.select('#g-pmsp-SME-edu-sme')
+      .transition()
+      .duration(slidesConfigs.duration)
+      .style('opacity', slidesConfigs.opacityMed)
+
+      d3.selectAll('.edu-outros').each(function (rect) {
+        d3.select(this.parentNode)
+        .transition()
+        .duration(slidesConfigs.duration)
+        .style('opacity', slidesConfigs.opacityMedLow)
+        // .attr('fill', 'rgb(0, 0, 0)')
+      })
+
+      if (slides['i04'].prevWidth && d3.select('#pmsp-SME-edu-sme').node().getBoundingClientRect().width !== slides['i04'].prevWidth) {
+        // return to previous
+        d3.select('#pmsp-SME-edu-sme')
         .transition()
         .duration(slidesConfigs.duration)
         .attrTween("height", function() {
@@ -113,7 +172,7 @@ export let slides = {
     "cat_2": undefined,
     "animation": function () {
       // store previous size for rollback
-      let svgSME = d3.select('#pmsp-SME').node();
+      let svgSME = d3.select('#pmsp-SME-edu-sme').node();
       let svgSMEHeight = svgSME.getBoundingClientRect().height;
       let svgSMEWidth = svgSME.getBoundingClientRect().width;
       if (!slides['i04'].prevWidth) {
@@ -130,14 +189,14 @@ export let slides = {
       d3.selectAll('g')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0)
-      d3.select('#g-pmsp-SME')
+        .style('opacity', slidesConfigs.opacityOff)
+      d3.select('#g-pmsp-SME-edu-sme')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0.7)
+        .style('opacity', slidesConfigs.opacityMed)
 
       // make sme full screen
-      d3.select('#pmsp-SME')
+      d3.select('#pmsp-SME-edu-sme')
       .transition()
       .duration(slidesConfigs.duration)
       .attrTween("height", function() {
@@ -155,11 +214,11 @@ export let slides = {
       d3.select('#chart-pmsp').selectAll('g')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0)
+        .style('opacity', slidesConfigs.opacityOff)
       d3.select('#chart-sme').selectAll('g')
         .transition()
         .duration(slidesConfigs.duration)
-        .style('opacity', 0.2)
+        .style('opacity', slidesConfigs.opacityLow)
       setTimeout(function() {
       }, slidesConfigs.duration);
     },

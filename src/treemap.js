@@ -36,6 +36,7 @@ export function create(elementId, data) {
 
   cell.append("rect")
   .attr("id", function(d) { return d.data.id; })
+  .attr("class", function(d) { return d.data.name; })
   .attr("data-value", function(d) { return d.value; })
   .attr("width", function(d) { return d.x1 - d.x0; })
   .attr("height", function(d) { return d.y1 - d.y0; })
