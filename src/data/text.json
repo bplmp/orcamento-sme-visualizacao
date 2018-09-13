@@ -1,7 +1,7 @@
 {
   "paragraphs": {
     "i01": {
-      "text": "Imagine que sua tela representa todo o orçamento da Prefeitura de São Paulo, ou seja, todo o dinheiro que ela tem para investir.<br>&darr;"
+      "text": "Imagine que sua tela representa todo o orçamento da Prefeitura de São Paulo, ou seja, todo o dinheiro que ela tem para gastar.<br>&darr;"
     },
     "i02": {
       "text": "Vamos dividir a tela em partes, correspondendo aos gastos de cada um dos Órgãos da Prefeitura."
@@ -61,7 +61,7 @@
       "text": "Sua maior parte é repassada para os Centros de Educação Infantil, também conhecidos como creches."
     },
     "s05_02": {
-      "text": "Outra parte é investida em educação especial para pessoas com deficiência."
+      "text": "Outra parte é gasta com educação especial para pessoas com deficiência."
     },
     "s05_03": {
       "text": "E o restante com programas de alfabetização de jovens e adultos e outras parcerias."
