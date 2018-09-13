@@ -1,6 +1,7 @@
 const d3 = require('d3v4');
+const treemapClick = require('./slides').treemapClick;
 
-export function create(elementId, data) {
+export function create(elementId, data, interactive) {
   let chartDiv = document.getElementById(elementId);
   chartDiv.innerHTML = '';
   let svg = d3.select(chartDiv).append("svg");
@@ -45,6 +46,10 @@ export function create(elementId, data) {
   .attr("fill", function(d) {
       return elementId === "chart-pmsp" ? "#333" : color(d.parent.data.id);
   });
+
+  if (interactive) {
+    cell.on("click", treemapClick);
+  }
 
   cell.append("clipPath")
   .attr("id", function(d) { return "clip-" + d.data.id; })

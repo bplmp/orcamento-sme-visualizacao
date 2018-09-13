@@ -33,5 +33,6 @@ function setActiveSlide(slideId) {
 function isElementOnScreen(id) {
     var element = document.getElementById(id);
     var bounds = element.getBoundingClientRect();
-    return bounds.top < (window.innerHeight / 1) && bounds.bottom > 0;
+    var check = bounds.top < (window.innerHeight / 1) && bounds.bottom > 0;
+    return check;
 }

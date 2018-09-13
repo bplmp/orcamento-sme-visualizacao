@@ -2,6 +2,7 @@ const d3 = require('d3v4');
 const slidesConfigs = require('./slides_configs').configs;
 const textData = require('./data/text.json');
 const categoriesData = require('./data/categories.json');
+const itemsData = require('./data/items.json');
 const quantititesData = require('./data/quant.json');
 
 const numeral = require('numeral');
@@ -383,6 +384,10 @@ export let slides = {
     "cat_1": "orc-ti",
     "cat_2": ["orc-ti-manutencao_equip_ti"],
   },
+  "explore": {
+    "cat_1": undefined,
+    "cat_2": undefined,
+  }
 }
 
 Object.keys(slides).forEach(function(key, index) {
@@ -445,4 +450,31 @@ export function setSlideText() {
 
   let textDiv = document.querySelector('#text')
   textDiv.innerHTML = `${textParagraphs.join('')}`
+}
+
+const interactiveText = document.getElementById('interactive-text')
+export function treemapClick(d) {
+  // console.log(d);
+  fadeAllOut();
+  d3.select(this)
+    .transition()
+    .duration(slidesConfigs.duration)
+    .style('opacity', slidesConfigs.opacityMed)
+
+  let value = numeral(d.value).format('$ 0.00 a')
+  let category = categoriesData[d.data.parent]
+  let text = itemsData[d.data.id]
+
+  let html = `<p class="text-category">${category ? category.text : ''}</p>
+  <h1>${text ? text.text : ''}</h1>
+  <p>${value}</p>`
+  interactiveText.innerHTML = html;
+
+  // HACK: helper
+  // let ids = {}
+  // d3.select('#chart-sme').selectAll('rect').each(function (d) {
+  //   let el = d3.select(this).data
+  //   ids[d.data.id] = {"text": ""};
+  // })
+  // console.log(JSON.stringify(ids));
 }

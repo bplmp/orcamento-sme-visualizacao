@@ -20,8 +20,8 @@ window.onload = function() {
 };
 
 export function init() {
-  treemap.create("chart-sme", dataSME)
-  treemap.create("chart-pmsp", dataPMSP)
+  treemap.create("chart-sme", dataSME, true)
+  treemap.create("chart-pmsp", dataPMSP, false)
   slides.setSlideText()
   // trigger slides to begin
   scroll.triggerSlides(true)
@@ -31,6 +31,6 @@ window.addEventListener("resize", function () {
   // HACK:
   slides.slides['i04'].prevWidth = undefined
   slides.slides['i04'].prevHeight = undefined
-  
+
   init()
 });

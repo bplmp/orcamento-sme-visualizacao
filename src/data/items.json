@@ -1,0 +1,128 @@
+{
+  "orc-pessoal-docentes": {
+    "text": "Docentes"
+  },
+  "orc-pessoal-gestores": {
+    "text": "Gestores"
+  },
+  "orc-pessoal-estagios": {
+    "text": "Estágios"
+  },
+  "orc-pessoal-adiantamento": {
+    "text": "Adiantamentos"
+  },
+  "orc-pessoal-outros": {
+    "text": "Outros gastos com pessoal"
+  },
+  "orc-parcerias-creches": {
+    "text": "Creches"
+  },
+  "orc-parcerias-ed_especial": {
+    "text": "Educação Especial"
+  },
+  "orc-parcerias-eja": {
+    "text": "Alfabetização de Jovens e Adultos"
+  },
+  "orc-parcerias-outros": {
+    "text": "Outras parcerias"
+  },
+  "orc-funcionamento_unidades-limpeza": {
+    "text": "Limpeza"
+  },
+  "orc-funcionamento_unidades-vigilancia": {
+    "text": "Vigilância"
+  },
+  "orc-funcionamento_unidades-agua_esgoto": {
+    "text": "Água e Esgoto"
+  },
+  "orc-funcionamento_unidades-obras_reformas": {
+    "text": "Obras e Reformas"
+  },
+  "orc-funcionamento_unidades-eletricidade": {
+    "text": "Eletricidade"
+  },
+  "orc-funcionamento_unidades-ceu_outros": {
+    "text": "Outros gastos com CEUs"
+  },
+  "orc-funcionamento_unidades-manutencao": {
+    "text": "Manutenção das unidades"
+  },
+  "orc-funcionamento_unidades-aluguel_imoveis": {
+    "text": "Aluguel de imóveis"
+  },
+  "orc-funcionamento_unidades-eventos": {
+    "text": "Eventos"
+  },
+  "orc-funcionamento_unidades-mobiliario": {
+    "text": "Mobiliário"
+  },
+  "orc-funcionamento_unidades-telefone": {
+    "text": "Telefone"
+  },
+  "orc-funcionamento_unidades-logistica_transportes": {
+    "text": "Logística e Transportes"
+  },
+  "orc-funcionamento_unidades-uniceu": {
+    "text": "UniCEU"
+  },
+  "orc-alimentacao-refeicoes": {
+    "text": "Refeições prontas"
+  },
+  "orc-alimentacao-insumos": {
+    "text": "Insumos para refeições"
+  },
+  "orc-alimentacao-prep_dist": {
+    "text": "Preparo e distribuição de alimentos"
+  },
+  "orc-alimentacao-leve_leite": {
+    "text": "Leve-Leite"
+  },
+  "orc-alimentacao-pnae": {
+    "text": "Programa Nacional de Alimentação Escolar (PNAE)"
+  },
+  "orc-uniforme_materiais-uniforme": {
+    "text": "Uniformes"
+  },
+  "orc-uniforme_materiais-materiais": {
+    "text": "Materiais didáticos"
+  },
+  "orc-transporte-teg": {
+    "text": "Transporte Escolar Gratuito (TEG)"
+  },
+  "orc-transporte-veiculos": {
+    "text": "Aluguel de ônibus e veículos"
+  },
+  "orc-ti-compra_notebooks": {
+    "text": "Compra de notebooks"
+  },
+  "orc-ti-manutencao_software_sistemas": {
+    "text": "Manutenção de softwares e sistemas"
+  },
+  "orc-ti-internet": {
+    "text": "Fornecimento de internet"
+  },
+  "orc-ti-outros": {
+    "text": "Outros gastos com tecnologia da informação (TI)"
+  },
+  "orc-ti-manutencao_equip_ti": {
+    "text": "Manutenção de equipamentos de TI"
+  },
+  "orc-ti-manutencao_impressao": {
+    "text": "Manutenção de equipamentos de impressão"
+  },
+  "orc-ti-manutencao": {
+    "text": "Outros gastos com manutenção em TI"
+  },
+  "orc-transferencias-ptrf": {
+    "text": "Transferências do PTRF diretamente para as escolas"
+  },
+  "orc-pedagogico-mais_educacao": {
+    "text": "Programa Mais Educação"
+  },
+  "orc-pedagogico-formacao": {
+    "text": "Formação"
+  },
+  "orc-suporte_administrativo-suporte_administrativo_outros": {
+    "text": "Suporte administrativo"
+  }
+}

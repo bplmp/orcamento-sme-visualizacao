@@ -17,23 +17,23 @@ body {
   font: 10px sans-serif;
 }
 
-#text {
+.text {
   z-index: 200;
   position: relative;
-  max-width: 800px;
-  padding: 0 50px 50vh 25px;
+  padding: 0 50px 0 25px;
   font-family: 'Heebo', sans-serif;
   line-height: 1.15;
   -webkit-font-smoothing: antialiased;
   text-shadow: #ffffff 4px 0px 0px, #ffffff 3.87565px 0.989616px 0px, #ffffff 3.51033px 1.9177px 0px, #ffffff 2.92676px 2.72656px 0px, #ffffff 2.16121px 3.36588px 0px, #ffffff 1.26129px 3.79594px 0px, #ffffff 0.282949px 3.98998px 0px, #ffffff -0.712984px 3.93594px 0px, #ffffff -1.66459px 3.63719px 0px, #ffffff -2.51269px 3.11229px 0px, #ffffff -3.20457px 2.39389px 0px, #ffffff -3.69721px 1.52664px 0px, #ffffff -3.95997px 0.56448px 0px, #ffffff -3.97652px -0.432781px 0px, #ffffff -3.74583px -1.40313px 0px, #ffffff -3.28224px -2.28625px 0px, #ffffff -2.61457px -3.02721px 0px, #ffffff -1.78435px -3.57996px 0px, #ffffff -0.843183px -3.91012px 0px, #ffffff 0.150409px -3.99717px 0px, #ffffff 1.13465px -3.8357px 0px, #ffffff 2.04834px -3.43574px 0px, #ffffff 2.83468px -2.82216px 0px, #ffffff 3.44477px -2.03312px 0px, #ffffff 3.84068px -1.11766px 0px, #ffffff 3.9978px -0.132717px 0px;
   color: #333;
 }
+.text h1 {
+  font-weight: 400;
+}
 .text-paragraph {
   margin-top: 50vh;
   margin-bottom: 90vh;
-}
-.text-paragraph h1 {
-  font-weight: 400;
+  max-width: 800px;
 }
 .text-category {
   text-transform: uppercase;
@@ -41,6 +41,23 @@ body {
   margin: 0;
 }
 
+#chart-wrapper-pmsp {
+  z-index: 1;
+}
+#chart-wrapper-sme {
+  z-index: 2;
+}
+
+#interactive {
+  height: calc(100vh - 10px);
+  border: 5px solid #333;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0 50px 0 25px;
+  margin: 5px;
+}
 
 /* mobile */
 @media only screen and (max-width : 992px) {
