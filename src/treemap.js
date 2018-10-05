@@ -1,12 +1,15 @@
 const d3 = require('d3v4');
 const treemapClick = require('./slides').treemapClick;
 
-export function create(elementId, data, interactive) {
+export function create(wrapperId, elementId, data, interactive) {
   let chartDiv = document.getElementById(elementId);
   chartDiv.innerHTML = '';
   let svg = d3.select(chartDiv).append("svg");
-  let width = chartDiv.clientWidth;
-  let height = chartDiv.clientHeight;
+  let wrap = document.getElementById(wrapperId)
+  let width = wrap.clientWidth;
+  let height = wrap.clientHeight;
+  console.log(wrap.clientWidth, wrap.clientHeight);
+  console.log(width, height);
 
   let fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
   color = d3.scaleOrdinal(d3.schemeCategory10.map(fader)),

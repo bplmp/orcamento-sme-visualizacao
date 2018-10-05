@@ -21,8 +21,8 @@ window.onload = function() {
 };
 
 export function init() {
-  treemap.create("chart-sme", dataSME, true)
-  treemap.create("chart-pmsp", dataPMSP, false)
+  treemap.create("chart-wrapper-sme", "chart-sme", dataSME, true)
+  treemap.create("chart-wrapper-pmsp", "chart-pmsp", dataPMSP, false)
   slides.setSlideText()
   // trigger slides to begin
   scroll.triggerSlides(true)
