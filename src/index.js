@@ -6,6 +6,7 @@ const dataPMSP = require('./data/pmsp_budget.json');
 
 const scroll = require('./scroll');
 const treemap = require('./treemap');
+const menu = require('./menu');
 
 function isMobile() {
    if(window.devicePixelRatio > 1) {

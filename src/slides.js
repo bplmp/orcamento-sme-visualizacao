@@ -450,7 +450,8 @@ export function setSlideText() {
 
     let categoryText = slide.cat_1_text ? slide.cat_1_text : ''
 
-    let html = `<div class="text-paragraph" id="${id}">
+    let html = `<div class="anchor" id="a-${id}"></div>
+    <div class="text-paragraph" id="${id}">
       <div>
         <span class="text-category" style="background: ${slideColor}">${categoryText}</span>
       </div>
@@ -495,3 +496,25 @@ export function treemapClick(d) {
   // })
   // console.log(JSON.stringify(ids));
 }
+
+// set menu links
+function setMenuLinks () {
+  let links = []
+  Object.keys(slides).forEach(function(key, index) {
+    let slide = slides[key]
+    let categoryText = slide.cat_1_text ? slide.cat_1_text : ''
+    let slideCategories = slide.cat_2
+    // console.log(categoryText, key, slideCategories)
+    if (!slideCategories && categoryText) {
+      links.push({key: key, text: categoryText})
+    }
+  })
+  let linksHtml = []
+  for (var i = 0; i < links.length; i++) {
+    let html =  `<li><a class='menu-links' href="#a-${links[i].key}">${links[i].text}</a></li>`
+    linksHtml.push(html)
+  }
+  let menuDiv = document.querySelector('#menu')
+  menuDiv.innerHTML = `${linksHtml.join('')}`
+}
+setMenuLinks()
