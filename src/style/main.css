@@ -41,6 +41,13 @@ body {
   margin: 0;
 }
 
+[data-stroke="outlined"] {
+  outline-color: #333;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
 #chart-wrapper-pmsp {
   z-index: 1;
 }
@@ -57,6 +64,7 @@ body {
   background: transparent;
   padding: 0 50px 0 25px;
   margin: 5px;
+  pointer-events: none;
 }
 
 /* mobile */

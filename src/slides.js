@@ -40,8 +40,9 @@ function fadeAllOut() {
   d3.select('.treemap').selectAll('g').selectAll('rect')
   .transition()
   .duration(slidesConfigs.duration)
-  .attr('stroke', '#fff')
-  .attr('stroke-width', '0')
+  // .attr('stroke', '#fff')
+  // .attr('stroke-width', '0')
+  .attr('data-stroke', '')
 }
 
 function fadeGroup(selector, categories, opacity) {
@@ -57,8 +58,9 @@ function fadeGroup(selector, categories, opacity) {
     d3.selectAll(selector + category).select('rect')
     .transition()
     .duration(slidesConfigs.duration)
-    .attr('stroke', '#fff')
-    .attr('stroke-width', '4')
+    // .attr('stroke', '#333')
+    // .attr('stroke-width', '3.5')
+    .attr('data-stroke', 'outlined')
 
   })
 }
