@@ -412,6 +412,10 @@ export function setSlideText() {
     let slideMainCategory = slide.cat_1
     let slideCategories = slide.cat_2
     let slideValues = []
+
+    let slideParent = document.getElementsByClassName(slideMainCategory)
+    let slideColor = slideParent[0] ? slideParent[0].getElementsByTagName('rect')[0].dataset.fill : false
+
     if (slideCategories) {
       slideCategories.forEach(function (cat) {
         let slideRect = document.getElementById(cat)
@@ -443,10 +447,16 @@ export function setSlideText() {
     //   })
     // }
     // let valueHtml = slideValues.length ? `<p>${slideValues.join(',&nbsp;&nbsp;')} milhões</p>` : ''
-    // let categoryText = slide.cat_1_text ? `<p class="text-category">${slide.cat_1_text}</p>` : ''
-    // let html = `<div class="text-paragraph" id="${id}">${categoryText}<h1>${text}</h1>${valueHtml}</div>`
 
-    let html = `<div class="text-paragraph" id="${id}"><h1>${text}</h1>${valueHtml}</div>`
+    let categoryText = slide.cat_1_text ? slide.cat_1_text : ''
+
+    let html = `<div class="text-paragraph" id="${id}">
+      <div>
+        <span class="text-category" style="background: ${slideColor}">${categoryText}</span>
+      </div>
+      <h1>${text}</h1>
+      ${valueHtml}
+    </div>`
     textParagraphs.push(html)
   });
 
@@ -466,10 +476,15 @@ export function treemapClick(d) {
   let value = numeral(d.value).format('$ 0.00 a')
   let category = categoriesData[d.data.parent]
   let text = itemsData[d.data.id]
+  let color = d3.select(this).select('rect').attr('fill')
 
-  let html = `<p class="text-category">${category ? category.text : ''}</p>
-  <h1>${text ? text.text : ''}</h1>
-  <p>${value}</p>`
+  let html = `<div>
+    <div>
+      <span class="text-category" style="background: ${color}">${category ? category.text : ''}</span>
+    </div>
+    <h1>${text ? text.text : ''}</h1>
+    <p>${value}</p>
+  </div>`
   interactiveText.innerHTML = html;
 
   // HACK: helper

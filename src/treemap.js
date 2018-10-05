@@ -45,6 +45,9 @@ export function create(elementId, data, interactive) {
   .attr("stroke-width", 0)
   .attr("fill", function(d) {
       return elementId === "chart-pmsp" ? "#333" : color(d.parent.data.id);
+  })
+  .attr("data-fill", function(d) {
+      return elementId === "chart-pmsp" ? "#333" : color(d.parent.data.id);
   });
 
   if (interactive) {
