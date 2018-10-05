@@ -5,11 +5,10 @@ export function create(wrapperId, elementId, data, interactive) {
   let chartDiv = document.getElementById(elementId);
   chartDiv.innerHTML = '';
   let svg = d3.select(chartDiv).append("svg");
+  // need to use wrapper because of this issue with firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=874811
   let wrap = document.getElementById(wrapperId)
   let width = wrap.clientWidth;
   let height = wrap.clientHeight;
-  console.log(wrap.clientWidth, wrap.clientHeight);
-  console.log(width, height);
 
   let fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
   color = d3.scaleOrdinal(d3.schemeCategory10.map(fader)),
