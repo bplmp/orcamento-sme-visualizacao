@@ -153,6 +153,19 @@ body {
   z-index: 300;
   position: relative;
 }
+.full-section-row {
+  max-width: 600px;
+}
+.full-section-row p {
+  font-size: 1.15em;
+}
+.img-responsive {
+  width: 100%;
+  object-fit: contain;
+}
+.text-center {
+  text-align: center;
+}
 
 .footer-logos {
   margin-top: 50px;
