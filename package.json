@@ -6,6 +6,7 @@
   "scripts": {
     "build": "nwb build-web-app",
     "deploy": "nwb build-web-app && node deploy.js",
+    "deploy-prod": "nwb build-web-app && node deploy-prod.js",
     "clean": "nwb clean-app",
     "start": "nwb serve-web-app --reload",
     "test": "nwb test",
