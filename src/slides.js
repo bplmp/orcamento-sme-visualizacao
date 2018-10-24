@@ -436,6 +436,12 @@ export function setSlideText() {
     perStudentValue = numeral(perStudentValue).format()
 
     let valueHtml = slideValues.length ? `<p>${totalValue}</p>` : ''
+
+    // HACK: hide value for all PMSP because it isn't precise yet
+    if (id === 'i03_01') {
+      valueHtml = ''
+    }
+
     // let valueHtml = slideValues.length ? `<p>${totalValue}</p><p>${perStudentValue} por aluno</p>` : ''
 
     // alternative: display all values
