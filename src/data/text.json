@@ -1,31 +1,31 @@
 {
   "paragraphs": {
     "i01": {
-      "text": "Imagine que sua tela representa todo o orçamento da Prefeitura de São Paulo, ou seja, todo o dinheiro que ela tem para gastar.<br>&darr;"
+      "text": "Imagine que esta tela representa todo o orçamento da Prefeitura de São Paulo, ou seja, todo o recurso que ela tem para gastar.<br>&darr;"
     },
     "i02": {
-      "text": "Vamos dividir a tela em partes, correspondendo aos gastos de cada um dos Órgãos da Prefeitura."
+      "text": "Vamos dividir a tela em partes, correspondendo às despesas de cada um dos órgãos da Prefeitura."
     },
     "i03": {
       "text": "Esta parte corresponde ao orçamento da Secretaria de Educação."
     },
     "i03_01": {
-      "text": "Mas também há gastos com Educação em outros órgãos da Prefeitura, como no Bilhete Único para estudantes, aposentadorias de professores e telecentros de ensino."
+      "text": "Mas também há despesas que são consideradas no tema Educação em outros órgãos da Prefeitura, como o Bilhete Único para estudantes, aposentadorias de professores e telecentros."
     },
     "i04": {
-      "text": "Vamos olhar agora só para o orçamento da Secretaria de Educação,"
+      "text": "Vamos olhar agora apenas para o orçamento da Secretaria de Educação,"
     },
     "s01": {
-      "text": "e vamos dividir o orçamento da Educação em partes."
+      "text": "e vamos dividir o orçamento da SME em partes."
     },
     "s03": {
-      "text": "Esta é a parte que corresponde ao gasto com pessoal, mais da metade de todo orçamento."
+      "text": "Esta é a parte que corresponde aos gastos com pessoal: mais da metade de todo orçamento."
     },
     "s03_01": {
       "text": "A maior parte dos gastos com pessoal são salários e benefícios dos professores, coordenadores e diretores."
     },
     "s03_02": {
-      "text": "O restante dos gastos são com gestores,"
+      "text": "O restante das despesas são com gestores,"
     },
     "s03_03": {
       "text": "estagiários e outros custos."
@@ -58,43 +58,43 @@
       "text": "Além de construir e manter seus próprios prédios, a Secretaria também faz parcerias com outras entidades para prover educação."
     },
     "s05_01": {
-      "text": "Sua maior parte é repassada para os Centros de Educação Infantil, também conhecidos como creches."
+      "text": "A maior parte dos recursos de parcerias é repassada aos Centros de Educação Infantil, conhecidos como creches."
     },
     "s05_02": {
-      "text": "Outra parte é gasta com educação especial para pessoas com deficiência."
+      "text": "Outra parte é investida em educação especial para pessoas com deficiência."
     },
     "s05_03": {
       "text": "E o restante com programas de alfabetização de jovens e adultos e outras parcerias."
     },
     "s06": {
-      "text": "Um outro grande custo da Secretaria é com a alimentação dos estudantes."
+      "text": "Outra despesa expressiva da Secretaria é com a alimentação dos estudantes."
     },
     "s06_01": {
-      "text": "Boa parte é gasto com refeições compradas diretamente de fornecedores."
+      "text": "Boa parte é gasto com refeições providas por fornecedores no modelo terceirizado."
     },
     "s06_02": {
-      "text": "Mas a Secretaria também compra alimentos para produzir refeições,"
+      "text": "Mas a Secretaria também compra e distribui alimentos diretamente para produzir refeições,"
     },
     "s06_03": {
       "text": "e nesse caso precisa pagar também pelo seu preparo e distribuição."
     },
     "s06_04": {
-      "text": "O restante é gasto com o programa Leve-Leite, que entrega leite de graça para famílias de baixa renda com crianças pequenas,"
+      "text": "O restante é aplicado no programa Leve-Leite, que distribui leite em pó para famílias de baixa renda com crianças pequenas,"
     },
     "s06_05": {
       "text": "e com repasse de verbas do Programa Nacional de Alimentação Escolar (PNAE) diretamente para as escolas."
     },
     "s07": {
-      "text": "Outra parte grande são os custos com transporte."
+      "text": "Outra parte expressiva são custos com transporte."
     },
     "s07_01": {
-      "text": "Sua grande maioria é gasta com o Transporte Escolar Gratuito (TEG), disponível quando a Secretaria não consegue matricular as crianças em até 2 km de distância da escola, ou em outros casos especiais."
+      "text": "A maior parte vai para o Transporte Escolar Gratuito (TEG), disponível quando as crianças frequentam escolas a mais de 2km de casa, ou em outros casos especiais."
     },
     "s07_02": {
       "text": "O restante é utilizado com aluguel de veículos como ônibus de excursões e carros."
     },
     "s08": {
-      "text": "A Secretaria também tem custos com materiais para os estudantes,"
+      "text": "A Secretaria também tem custos com materiais distribuídos aos estudantes,"
     },
     "s08_01": {
       "text": "como uniformes escolares"
@@ -106,22 +106,22 @@
       "text": "A Secretaria repassa uma parte dos seus recursos diretamente para as unidades escolares."
     },
     "s09_01": {
-      "text": "Os repasses são feitos através de Associações de Pais e Mestres (APMs) e servem para descentralizar a administração e ampliar a autonomia das escolas."
+      "text": "Os repasses são feitos por meio das Associações de Pais e Mestres (APMs) e são importantes para descentralizar a administração e ampliar a autonomia das escolas."
     },
     "s10": {
-      "text": "A Educação também tem custos com tecnologia da informação (TI)."
+      "text": "A SME também tem custos com tecnologia da informação (TI)."
     },
     "s10_01": {
       "text": "Em 2017, foi feita uma grande compra de notebooks para a Educação."
     },
     "s10_02": {
-      "text": "Os gastos com TI também incluem desenvolvimento, manutenção de softwares e sistemas,"
+      "text": "As despesas com TI também incluem desenvolvimento, manutenção de softwares e sistemas,"
     },
     "s10_03": {
       "text": "fornecimento de internet para todas unidades escolares,"
     },
     "s10_04": {
-      "text": "e supporte e assistência técnica para operação da TI."
+      "text": "e suporte e assistência técnica para operação da TI."
     },
     "explore": {
       "text": "Role mais para baixo para explorar uma versão interativa dessa visualização.<br>&darr;"
